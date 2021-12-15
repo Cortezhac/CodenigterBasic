@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends My_Controller {
 
     function __construct()
     {
@@ -10,6 +10,6 @@ class Home extends CI_Controller {
 
     public function index()
     {
-        echo "Hor";
+        $this->layout_front('welcome_message', 'Bienvenido');
     }
 }
